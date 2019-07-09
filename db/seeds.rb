@@ -14,6 +14,7 @@
 require 'faker'
 
 10.times do
-  Article.create(title: Faker::Games::SuperSmashBros.fighter.to_s,
-                 content: Faker::TvShows::StrangerThings.quote.to_s)
+  Article.create(title: Faker::Book.title.to_s,
+                 content: "The author of this book might be
+                           #{Faker::Book.author}. Probably not. Who knows?")
 end
